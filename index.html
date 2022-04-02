@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Avaliação</title>
+    <link rel="stylesheet" href="Estilo.css" />
+  </head>
+  <body>
+    <form>
+ <b id="Nomedocavalo">Nome</b> <input type="text" id="texto" /> <br />
+
+   <br />
+   <b>1.</b> Quais cursos são ofertados na EEEP Amélia Figueiredo de Lavor?
+  <br />
+ <textarea name="tex1" id="texto2" cols="56" rows="5"></textarea> <br />
+  <br />
+  <b>2.</b> Marque as opções que possui os sistemas de numerações novos que
+   <br />
+  aprendemos no 1º de Informática. <br />
+  <b> Sistema Octal  </b><input type="checkbox" id="check1" /> <br />
+      Sistema Binário </b> <input type="checkbox" id="check2" /> <br />
+  Sistema Decimal <input type="checkbox" id="check3" /> <br /> 
+      Algarismos Hexadecimal <input type="checkbox" id="check4" /> <br />
+      <br /> 
+      <b>3.</b> Qual o produto abaixo é mais adequado para limpar uma memória
+      RAM? <br />
+      <label for="iso">Álcool Isopropílico</label>
+      <input type="radio" name="limpeza" id="iso" /> <br />
+      <label for="con">Limpa Contato</label>
+      <input type="radio" name="limpeza" id="cont" /> <br />
+      <label for="alc">Álcool 70%</label>
+      <input type="radio" name="limpeza" id="alco" /> <br />
+      <label for="agu">Água</label>
+      <input type="radio" name="limpeza" id="agua" /> <br />
+      <br />
+      <b>4.</b> Podemos afirmar que o modo de funcionamento de memória RAM em
+      <br />
+      DUAL CHANEL só pode ser feito com pares de módulos de memória. <br />
+      Marque se a afirmação é verdadeira ou falsa. <br />
+      <label for="ver">Verdadeira</label>
+      <input type="radio" name="VF" id="ver" /> <br />
+      <label for="fal">Falsa</label>
+   <input type="radio" name="VF" id="fal" /> <br />
+ <br />
+ <button type="button" onclick="corrigir()"><b>Corrigir</b></button>
+<br />
+ <br />
+<fieldset class="hide">
+        <legend><b>Resumo</b></legend>
+ <div id="nome"></div>
+
+      <div id="q1"></div>
+ <div id="q2.1"></div>
+        <div id="q2.2"></div>
+        <div id="q2.3"></div>
+        <div id="q2.4"></div>
+        <div id="q3"></div>
+        <div id="q4"></div>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
